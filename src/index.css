@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.rand {
+  color: rgba(47, 13, 104, 50%);
+}
+
+@theme {
+  --color-cstm-purple: #908eff;
+  --color-violet-950-50: rgba(47, 13, 104, 50%);
+}
