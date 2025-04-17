@@ -8,3 +8,28 @@
   --color-cstm-purple: #908eff;
   --color-violet-950-50: rgba(47, 13, 104, 50%);
 }
+
+body {
+  font-family: "Carlito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h3,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Work Sans", sans-serif;
+}
+
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+}
+
+.carlito {
+  font-family: "Carlito", sans-serif;
+}
