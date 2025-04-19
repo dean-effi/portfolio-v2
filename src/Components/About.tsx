@@ -6,8 +6,9 @@ import XIcon from "../assets/icons/x.svg?react";
 export default function About() {
   return (
     <section
+      id="about"
       aria-label="about"
-      className="m-auto text-center sm:w-[330px] md:w-full lg:pt-12"
+      className="mx-auto min-h-screen w-[305px] py-7 pt-16 text-center sm:w-[330px] md:w-full lg:pt-12"
     >
       <h1 className="text-[122px] leading-30 font-extrabold sm:text-[135px] lg:text-[185px] lg:leading-38 xl:text-[240px] xl:leading-44 2xl:text-[290px] 2xl:leading-56">
         Dean Effi
@@ -32,7 +33,7 @@ export default function About() {
             and I’m always looking to improve how things work.
           </p>
           <div className="flex items-center justify-between">
-            <button className="bg-cstm-purple rounded-full px-4 py-2.5 font-bold text-violet-950 md:px-4.5 md:tracking-wide xl:text-2xl 2xl:text-[28px]">
+            <button className="bg-cstm-purple 2xl:py-2.8 rounded-full px-4 py-2.5 font-bold text-violet-950 md:px-4.5 md:tracking-wide xl:text-2xl 2xl:px-5 2xl:text-[28px]">
               CONTACT
             </button>
             <div className="flex items-center gap-6">

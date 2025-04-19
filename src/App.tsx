@@ -1,12 +1,12 @@
 import About from "./Components/About";
+import Nav from "./Components/Nav";
 import "./index.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="mx-auto w-[305px] text-gray-50 sm:w-full sm:text-base md:text-lg lg:text-xl 2xl:text-[22px]">
+    <div className="min-h-[200vh] text-gray-50 sm:text-base md:text-lg lg:text-xl 2xl:text-[22px]">
+      <Nav />
       <About />
     </div>
   );
 }
-
-export default App;
