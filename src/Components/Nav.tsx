@@ -18,10 +18,35 @@ export default function Nav() {
     else
       document.querySelector("body")?.classList.remove("grayed-out");
   }, [navOpen]);
+  console.log("rerenderinggg");
+  useEffect(() => {
+    let navActive = false;
+
+    function onScroll() {
+      const scrolled = window.scrollY;
+
+      const nav = document.querySelector(".main-nav");
+      if (!nav) return;
+
+      if (scrolled === 0 && navActive) {
+        nav.classList.remove("active-nav");
+        navActive = false;
+      } else if (scrolled > 0 && !navActive) {
+        nav.classList.add("active-nav");
+        navActive = true;
+      }
+    }
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <div className="sticky top-0 z-10 border-gray-500 bg-slate-950 pb-2 text-gray-50 shadow-gray-500">
+    <div
+      className={`main-nav sticky top-0 z-7 bg-gray-950 text-gray-50 shadow-gray-500`}
+    >
       {/* for mobile */}
-      <div className="left-0 z-10 pt-4 sm:hidden">
+      <div className="p-4 sm:hidden">
         <button
           onClick={() => {
             if (!everOpened.current) everOpened.current = true;
@@ -46,14 +71,18 @@ export default function Nav() {
           >
             <BurgerIcon />
           </button>
-          <ul>
-            <li className="text-cstm-purple grid gap-10 pt-10 text-2xl font-bold">
+          <ul className="text-cstm-purple grid gap-10 p-4 pt-10 text-2xl font-bold">
+            <li>
               <a onClick={() => setNavOpen(false)} href="#about">
                 about
               </a>
+            </li>
+            <li>
               <a onClick={() => setNavOpen(false)} href="#projects">
                 projects
               </a>
+            </li>
+            <li>
               <a onClick={() => setNavOpen(false)} href="#contact">
                 contact
               </a>
@@ -63,8 +92,18 @@ export default function Nav() {
       </div>
 
       {/* larg menu */}
-      <nav className="hidden sm:flex xl:text-lg 2xl:text-xl">
-        Halo ur screen is big
+      <nav className="hidden sm:flex">
+        <ul className="m-auto flex w-[450px] justify-between p-4 lg:w-[480px]">
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li>
+            <a href="#projects">projects</a>
+          </li>
+          <li>
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
       </nav>
     </div>
   );

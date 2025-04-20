@@ -42,7 +42,7 @@ body {
   0% {
     transform: translate(-100%, 0px);
 
-    background-color: #1e2939;
+    background-color: #050c1e;
   }
 
   100% {
@@ -50,12 +50,29 @@ body {
 }
 @keyframes slideOut {
   0% {
-    background-color: #1e2939;
+    background-color: #050c1e;
   }
 
   100% {
     transform: translate(-100%, 0px);
     display: hidden;
+  }
+}
+.grayed-out::before {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  height: 100%;
+  aspect-ratio: 1;
+  @apply bg-gray-800;
+
+  opacity: 70%;
+}
+
+@media (width > 640px) {
+  /* … */
+  .grayed-out::before {
+    opacity: 0;
   }
 }
 
@@ -68,13 +85,24 @@ body {
   animation: slideOut 0.6s;
   animation-fill-mode: forwards;
 }
-
-.grayed-out::before {
+.main-nav::after {
   content: "";
   position: absolute;
-  z-index: 5;
-  height: 100%;
-  aspect-ratio: 1;
-  @apply bg-gray-800;
-  opacity: 70%;
+  height: 1px;
+  background-color: #ccc;
+  width: 0%;
+  transition: none;
+}
+
+.active-nav::after {
+  animation: fill 1s forwards;
+}
+
+@keyframes fill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
