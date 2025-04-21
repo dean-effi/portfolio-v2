@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import BurgerIcon from "../assets/icons/burger.svg?react";
+import useNavActive from "../hooks/useNavActive";
 export default function Nav() {
   const [navOpen, setNavOpen] = useState(false);
-
+  const navActive = useNavActive();
   const everOpened = useRef(false);
 
   const smallNavStateClass =
@@ -18,33 +19,13 @@ export default function Nav() {
     else
       document.querySelector("body")?.classList.remove("grayed-out");
   }, [navOpen]);
-  console.log("rerenderinggg");
-  useEffect(() => {
-    let navActive = false;
-
-    function onScroll() {
-      const scrolled = window.scrollY;
-
-      const nav = document.querySelector(".main-nav");
-      if (!nav) return;
-
-      if (scrolled === 0 && navActive) {
-        nav.classList.remove("active-nav");
-        navActive = false;
-      } else if (scrolled > 0 && !navActive) {
-        nav.classList.add("active-nav");
-        navActive = true;
-      }
-    }
-
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
     <div
       className={`main-nav sticky top-0 z-7 bg-gray-950 text-gray-50 shadow-gray-500`}
     >
+      <div
+        className={`${navActive ? "filled" : " "} absolute bottom-0 h-[1px] bg-gray-300`}
+      ></div>
       {/* for mobile */}
       <div className="p-4 sm:hidden">
         <button
