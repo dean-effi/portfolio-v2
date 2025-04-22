@@ -63,17 +63,6 @@
     }
   }
 
-  .grayed-out::before {
-    content: "";
-    position: absolute;
-    z-index: 6;
-    height: 100%;
-    aspect-ratio: 1;
-    @apply bg-gray-800;
-
-    opacity: 70%;
-  }
-
   .nav-open {
     animation: slideIn 0.7s;
     animation-fill-mode: forwards;
@@ -88,9 +77,15 @@
     animation: fill 1s forwards;
   }
 
+  html,
+  body {
+    position: relative;
+  }
+
+  /* on small */
   @media (width > 640px) {
-    .grayed-out::before {
-      opacity: 0;
+    .proj-para {
+      font-size: inherit;
     }
   }
 }

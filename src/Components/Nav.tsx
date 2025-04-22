@@ -13,12 +13,6 @@ export default function Nav() {
         ? " nav-open"
         : " nav-close";
 
-  useEffect(() => {
-    if (navOpen)
-      document.querySelector("body")?.classList.add("grayed-out");
-    else
-      document.querySelector("body")?.classList.remove("grayed-out");
-  }, [navOpen]);
   return (
     <div
       className={`main-nav sticky top-0 z-7 bg-gray-950 text-gray-50 shadow-gray-500`}
@@ -28,6 +22,7 @@ export default function Nav() {
       ></div>
       {/* for mobile */}
       <div className="p-4 sm:hidden">
+        {navOpen && <div className="fixed inset-0 z-5 bg-black/60" />}
         <button
           onClick={() => {
             if (!everOpened.current) everOpened.current = true;
@@ -41,7 +36,7 @@ export default function Nav() {
 
         <nav
           className={
-            "absolute top-0 left-0 z-10 h-screen w-[48vw] border-r-[1px] border-gray-600 bg-gray-950 pt-4 pl-6 text-xl " +
+            "fixed top-0 left-0 z-10 h-screen w-[48vw] border-r-[1px] border-gray-600 bg-gray-950 pt-4 pl-6 text-xl " +
             smallNavStateClass
           }
         >
