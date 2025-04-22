@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import BurgerIcon from "../assets/icons/burger.svg?react";
 import useNavActive from "../hooks/useNavActive";
 export default function Nav() {
