@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section aria-label="projects " id="projects">
       <SectionHeading name="PROJECTS" />
-      <div className="space-y-10 sm:space-y-12 md:space-y-[172px]">
+      <div className="mt-10 space-y-10 sm:mt-12 sm:space-y-12 md:mt-[172px] md:space-y-[172px]">
         {projectsData.map(project => (
           <Project project={project} key={project.id} />
         ))}

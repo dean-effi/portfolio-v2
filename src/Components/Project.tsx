@@ -27,7 +27,7 @@ export default function Project({
               </span>
             ))}
           </p>
-          <div className="mt-5 hidden items-center gap-3 text-sm sm:text-base md:flex lg:text-lg xl:text-xl 2xl:text-2xl">
+          <div className="` mt-5 hidden items-center gap-3 text-sm md:flex md:text-base lg:mt-6 lg:text-[17px] 2xl:text-lg">
             <button>
               <button>
                 <a
@@ -54,8 +54,8 @@ export default function Project({
         </div>
         <img
           src={project.img}
-          className="h-auto rounded-2xl md:max-w-[50%] xl:max-w-[40%]"
-          alt=""
+          className="rounded-2xl md:h-[90%] md:max-w-[50%] lg:h-auto xl:max-w-[40%]"
+          alt={project.name + " front page"}
         />
       </div>
       <div className="mt-5 flex items-center gap-3 text-sm sm:text-base md:hidden lg:text-lg xl:text-xl 2xl:text-2xl">

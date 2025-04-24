@@ -1,4 +1,5 @@
 import About from "./Components/About";
+import Contact from "./Components/Contact";
 import Nav from "./Components/Nav";
 import Projects from "./Components/Projects";
 import "./index.css";
@@ -9,6 +10,7 @@ export default function App() {
       <Nav />
       <About />
       <Projects />
+      <Contact />
     </div>
   );
 }

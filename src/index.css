@@ -82,6 +82,9 @@
     position: relative;
   }
 
+  .max-cont {
+    @apply mx-auto   w-[305px]   sm:w-[525px]  md:w-[620px] lg:w-[850px] xl:w-[1110px] 2xl:w-[1333px];
+  }
   /* on small */
   @media (width > 640px) {
     .proj-para {
