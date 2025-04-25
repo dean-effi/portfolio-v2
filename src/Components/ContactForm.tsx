@@ -65,7 +65,7 @@ export default function ContactForm() {
               autoComplete="off"
             />
           </div>
-          <button className="bg-cstm-purple mx-auto block rounded-full px-1.5 py-1 text-violet-950 lg:px-2.5 lg:py-2 lg:text-xl 2xl:text-[26px]">
+          <button className="bg-cstm-purple mx-auto block rounded-full px-4 py-2 font-bold text-violet-950 hover:bg-[#6F6CE9] active:bg-violet-950 active:text-gray-50 lg:px-4 xl:text-[22px] 2xl:px-4.5 2xl:py-2.5 2xl:text-[24px]">
             SUBMIT
           </button>
         </form>
