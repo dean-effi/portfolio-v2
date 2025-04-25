@@ -3,7 +3,7 @@ import SectionHeading from "./SectionHeading";
 
 export default function Contact() {
   return (
-    <section className="max-cont">
+    <section className="max-cont" id="contact">
       <SectionHeading name="CONTACT" />
       <ContactForm />
     </section>

@@ -77,13 +77,16 @@
     animation: fill 1s forwards;
   }
 
-  html,
-  body {
+  html {
     position: relative;
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
   }
-
+  button {
+    cursor: pointer;
+  }
   .max-cont {
-    @apply mx-auto   w-[305px]   sm:w-[525px]  md:w-[620px] lg:w-[850px] xl:w-[1110px] 2xl:w-[1333px];
+    @apply mx-auto w-[305px] sm:w-[525px] md:w-[620px] lg:w-[850px] xl:w-[1110px] 2xl:w-[1333px];
   }
   /* on small */
   @media (width > 640px) {
