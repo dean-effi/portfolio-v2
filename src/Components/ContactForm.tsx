@@ -40,6 +40,7 @@ export default function ContactForm() {
           />
           <input
             name="Email"
+            aria-label="your email"
             placeholder="Your Email"
             className="bg-violet-950-50 text-cstm-purple w-full rounded-xl p-3 font-bold"
             id="email"
@@ -48,6 +49,7 @@ export default function ContactForm() {
           />
           <textarea
             name="message"
+            aria-label="your message"
             id="message"
             rows={5}
             placeholder="Your Message"
