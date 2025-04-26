@@ -31,26 +31,22 @@ export default function Project({
             ))}
           </p>
           <div className="` mt-5 hidden items-center gap-3 text-sm md:flex md:text-base lg:mt-6 lg:text-[17px] 2xl:text-lg">
-            <button>
-              <a
-                target="_"
-                href={project.gitLink}
-                className="text-cstm-purple border-cstm-purple flex items-center gap-1.5 rounded-full border-2 px-2 py-1.5 hover:border-violet-500 active:border-violet-300 lg:px-2.5 lg:py-2"
-              >
-                <span>CODE</span>
-                <GithubIcon className="fill-cstm-purple w-4.5 lg:w-5 xl:w-6 2xl:w-7" />
-              </a>
-            </button>
-            <button>
-              <a
-                target="_"
-                href={project.liveLink}
-                className="flex items-center gap-1.5 rounded-full bg-gray-50 p-2 text-gray-950 hover:bg-gray-300 active:bg-white lg:p-2.5 2xl:p-[10px]"
-              >
-                <span>LIVE</span>
-                <LiveIcon className="w-3 pb-[2px] lg:w-[16px] lg:pb-[3.5px] xl:w-4.5 2xl:w-5.5" />
-              </a>
-            </button>
+            <a
+              target="_"
+              href={project.gitLink}
+              className="text-cstm-purple border-cstm-purple flex items-center gap-1.5 rounded-full border-2 px-2 py-1.5 hover:border-violet-500 active:border-violet-300 lg:px-2.5 lg:py-2"
+            >
+              <span>CODE</span>
+              <GithubIcon className="fill-cstm-purple w-4.5 lg:w-5 xl:w-6 2xl:w-7" />
+            </a>
+            <a
+              target="_"
+              href={project.liveLink}
+              className="flex items-center gap-1.5 rounded-full bg-gray-50 p-2 text-gray-950 hover:bg-gray-300 active:bg-white lg:p-2.5 2xl:p-[10px]"
+            >
+              <span>LIVE</span>
+              <LiveIcon className="w-3 pb-[2px] lg:w-[16px] lg:pb-[3.5px] xl:w-4.5 2xl:w-5.5" />
+            </a>
           </div>
         </div>
         <img
@@ -60,26 +56,22 @@ export default function Project({
         />
       </div>
       <div className="mt-5 flex items-center gap-3 text-sm sm:text-base md:hidden lg:text-lg xl:text-xl 2xl:text-2xl">
-        <button>
-          <a
-            target="_"
-            href={project.gitLink}
-            className="text-cstm-purple border-cstm-purple flex items-center gap-1.5 rounded-full border-2 px-2 py-1.5 hover:border-violet-500 active:border-violet-300 lg:px-2.5 lg:py-2"
-          >
-            <span>CODE</span>
-            <GithubIcon className="fill-cstm-purple w-4.5 lg:w-5 xl:w-6 2xl:w-7" />
-          </a>
-        </button>
-        <button>
-          <a
-            target="_"
-            href={project.liveLink}
-            className="flex items-center gap-1.5 rounded-full bg-gray-50 p-2 text-gray-950 hover:bg-gray-300 active:bg-white lg:p-2.5 2xl:p-[10px]"
-          >
-            <span>LIVE</span>
-            <LiveIcon className="w-3 pb-[2px] lg:w-[16px] lg:pb-[3.5px] xl:w-4.5 2xl:w-5.5" />
-          </a>
-        </button>
+        <a
+          target="_"
+          href={project.gitLink}
+          className="text-cstm-purple border-cstm-purple flex items-center gap-1.5 rounded-full border-2 px-2 py-1.5 hover:border-violet-500 active:border-violet-300 lg:px-2.5 lg:py-2"
+        >
+          <span>CODE</span>
+          <GithubIcon className="fill-cstm-purple w-4.5 lg:w-5 xl:w-6 2xl:w-7" />
+        </a>
+        <a
+          target="_"
+          href={project.liveLink}
+          className="flex items-center gap-1.5 rounded-full bg-gray-50 p-2 text-gray-950 hover:bg-gray-300 active:bg-white lg:p-2.5 2xl:p-[10px]"
+        >
+          <span>LIVE</span>
+          <LiveIcon className="w-3 pb-[2px] lg:w-[16px] lg:pb-[3.5px] xl:w-4.5 2xl:w-5.5" />
+        </a>
       </div>
     </div>
   );

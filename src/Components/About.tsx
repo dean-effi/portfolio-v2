@@ -23,7 +23,7 @@ export default function About() {
           <img
             className="rounded-4xl"
             src={myImage}
-            alt="a picture of me"
+            alt="portrait of me"
           />
         </div>
         <div className="order-0 content-between pt-[32px] sm:pt-10 lg:grid lg:w-[333px] lg:pt-0 xl:w-[430px] 2xl:w-[470px]">
@@ -33,10 +33,11 @@ export default function About() {
             and I’m always looking to improve how things work.
           </p>
           <div className="flex items-center justify-between">
-            <a href="#contact">
-              <button className="bg-cstm-purple 2xl:py-2.8 rounded-full px-4 py-2.5 font-bold text-violet-950 hover:bg-[#6F6CE9] active:bg-violet-950 active:text-gray-50 md:px-4.5 md:tracking-wide xl:text-2xl 2xl:px-5 2xl:text-[28px]">
-                CONTACT
-              </button>
+            <a
+              href="#contact"
+              className="bg-cstm-purple work-sans 2xl:py-2.8 rounded-full px-4 py-2.5 font-bold text-violet-950 hover:bg-[#6F6CE9] active:bg-violet-950 active:text-gray-50 md:px-4.5 md:tracking-wide xl:text-2xl 2xl:px-5 2xl:text-[28px]"
+            >
+              CONTACT
             </a>
             <div className="flex items-center gap-6">
               <a

@@ -36,11 +36,11 @@
   @keyframes slideIn {
     0% {
       transform: translate(-100%, 0px);
-
       background-color: #050c1e;
     }
 
     100% {
+      background-color: #030712;
     }
   }
   @keyframes slideOut {
@@ -49,6 +49,7 @@
     }
 
     100% {
+      background-color: #030712;
       transform: translate(-100%, 0px);
       display: hidden;
     }

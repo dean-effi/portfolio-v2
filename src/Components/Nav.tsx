@@ -43,7 +43,7 @@ export default function Nav() {
           <button
             onClick={() => setNavOpen(!navOpen)}
             className="cursor-pointer rounded-md p-2 pl-0"
-            aria-label="open menu"
+            aria-label="close menu"
           >
             <BurgerIcon />
           </button>
@@ -67,7 +67,7 @@ export default function Nav() {
         </nav>
       </div>
 
-      {/* larg menu */}
+      {/* large menu */}
       <nav className="hidden sm:flex">
         <ul className="m-auto flex w-[450px] justify-between p-4 lg:w-[480px]">
           <li>
