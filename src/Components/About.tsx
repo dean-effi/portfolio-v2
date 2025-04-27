@@ -24,7 +24,7 @@ export default function About() {
             className="h-full w-full rounded-4xl"
             src={myImage}
             width={300}
-            height={400}
+            height={200}
             alt="portrait of me"
           />
         </div>
