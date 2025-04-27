@@ -50,17 +50,17 @@ export default function Nav() {
           <ul className="text-cstm-purple grid gap-10 p-4 pt-10 text-2xl font-bold">
             <li>
               <a onClick={() => setNavOpen(false)} href="#about">
-                about
+                About
               </a>
             </li>
             <li>
               <a onClick={() => setNavOpen(false)} href="#projects">
-                projects
+                Projects
               </a>
             </li>
             <li>
               <a onClick={() => setNavOpen(false)} href="#contact">
-                contact
+                Contact
               </a>
             </li>
           </ul>
@@ -71,13 +71,13 @@ export default function Nav() {
       <nav className="hidden sm:flex">
         <ul className="m-auto flex w-[450px] justify-between p-4 lg:w-[480px]">
           <li>
-            <a href="#about">about</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#projects">projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact">contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

@@ -21,8 +21,10 @@ export default function About() {
         <div className="relative order-1 m-auto w-[236px] self-start sm:w-[328px] md:w-[342px] lg:m-0 lg:w-[332px] xl:w-[427px] 2xl:w-[470px]">
           <div className="bg-cstm-purple absolute top-0 h-full w-full rounded-4xl opacity-35 transition hover:opacity-0"></div>
           <img
-            className="rounded-4xl"
+            className="h-full w-full rounded-4xl"
             src={myImage}
+            width={300}
+            height={400}
             alt="portrait of me"
           />
         </div>

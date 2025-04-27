@@ -8,9 +8,11 @@ export default function App() {
   return (
     <div className="text-gray-50 sm:text-base md:text-lg lg:text-xl 2xl:text-[22px]">
       <Nav />
-      <About />
-      <Projects />
-      <Contact />
+      <main>
+        <About />
+        <Projects />
+        <Contact />
+      </main>
     </div>
   );
 }
