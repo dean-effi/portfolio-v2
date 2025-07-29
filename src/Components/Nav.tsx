@@ -1,10 +1,11 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import BurgerIcon from "../assets/icons/burger.svg?react";
 import useNavActive from "../hooks/useNavActive";
 export default function Nav() {
   const [navOpen, setNavOpen] = useState(false);
-  const navActive = useNavActive();
+  const [navEverActive, setNavEverActive] = useState(false);
   const everOpened = useRef(false);
+  const navActive = useNavActive();
 
   const smallNavStateClass =
     everOpened.current === false
@@ -13,12 +14,21 @@ export default function Nav() {
         ? " nav-open"
         : " nav-close";
 
+  const animationState = navActive
+    ? "filled"
+    : !navEverActive
+      ? " "
+      : "emptied ";
+
+  useEffect(() => {
+    if (navActive) setNavEverActive(true);
+  }, [navActive]);
   return (
     <div
       className={`main-nav sticky top-0 z-7 bg-gray-950 text-gray-50 shadow-gray-500`}
     >
       <div
-        className={`${navActive ? "filled" : " "} absolute bottom-0 h-[1px] bg-gray-300`}
+        className={`${animationState} absolute bottom-0 h-[1px] bg-gray-300`}
       ></div>
       {/* for mobile */}
       <div className="p-4 sm:hidden">

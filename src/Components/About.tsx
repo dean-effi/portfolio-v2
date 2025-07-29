@@ -43,7 +43,7 @@ export default function About() {
             </a>
             <div className="flex items-center gap-6">
               <a
-                href="https://github.com/ShimShon1"
+                href="https://github.com/dean-effi"
                 aria-label="to my github"
                 target="_blank"
               >
@@ -57,7 +57,7 @@ export default function About() {
                 <LinkedinIcon className="hover:fill-cstm-purple w-10 cursor-pointer fill-gray-50 transition-all hover:scale-110 xl:w-14" />
               </a>
               <a
-                href="https://x.com/CaptainBourbon"
+                href="https://x.com/dean_effi"
                 aria-label="to my x (twitter) profile"
                 target="_blank"
               >

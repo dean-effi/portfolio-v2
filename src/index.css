@@ -63,7 +63,14 @@
       width: 100%;
     }
   }
-
+  @keyframes empty {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
   .nav-open {
     animation: slideIn 0.7s;
     animation-fill-mode: forwards;
@@ -78,6 +85,9 @@
     animation: fill 1s forwards;
   }
 
+  .emptied {
+    animation: empty 1s forwards;
+  }
   html {
     position: relative;
     scroll-padding-top: 80px;

@@ -16,7 +16,7 @@ export default function Projects() {
         <span className="text-cstm-purple">More on my</span>
         <a
           target="_"
-          href="https://github.com/ShimShon1"
+          href="https://github.com/dean-effi"
           className="bg-cstm-purple flex items-center gap-1.5 rounded-full px-2 py-1.5 text-violet-950 hover:bg-violet-500 active:bg-violet-300 lg:px-2.5 lg:py-2"
         >
           <span>GitHub</span>
